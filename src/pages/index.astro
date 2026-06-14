@@ -1,0 +1,21 @@
+---
+import '../styles/global.css';
+import RegisterForm from '../components/RegisterForm.tsx';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Gamified Starter</title>
+	</head>
+	<body>
+		<!-- 
+			Crucial: We must use client:only="react" to prevent Astro's server 
+			from attempting to SSR the GamifiedCaptcha, which relies on window APIs.
+		-->
+		<RegisterForm client:only="react" />
+	</body>
+</html>
