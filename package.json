@@ -5,6 +5,12 @@
   "engines": {
     "node": ">=22.12.0"
   },
+  "keywords": [
+    "astro",
+    "astro-theme",
+    "captcha",
+    "security"
+  ],
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
